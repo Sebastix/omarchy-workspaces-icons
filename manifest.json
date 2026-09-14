@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "sebastix.workspaces-icons",
+  "name": "Workspaces with window icons",
+  "version": "1.0.0",
+  "author": "Sebastix",
+  "license": "MIT",
+  "description": "Workspace number indicators that also show the icon of each running window / application on that workspace which are clickable to switch",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Workspaces.qml"
+  },
+  "barWidget": {
+    "displayName": "Workspaces with window icons",
+    "description": "Workspace number indicators with running window icons",
+    "category": "Compositor",
+    "allowMultiple": false
+  }
+}
