@@ -335,7 +335,7 @@ BarWidget {
             id: numberButton
             Layout.alignment: Qt.AlignVCenter
             bar: root.bar
-            text: cell.slot === root.slots ? "0:" : String(cell.slot) + ":"
+            text: cell.slot === root.slots ? "0" : String(cell.slot) + ""
             foreground: cell.shown ? Color.bar.background : (root.bar ? root.bar.barForeground : Color.foreground)
             useActiveColor: false
             fontSize: root.numberFontSize
