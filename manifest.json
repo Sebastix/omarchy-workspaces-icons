@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "sebastix.workspaces-icons",
   "name": "Workspaces with window icons",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Sebastix",
   "license": "MIT",
   "description": "Workspace number indicators that also show the icon of each running window / application on that workspace which are clickable to switch",
@@ -16,6 +16,32 @@
     "displayName": "Workspaces with window icons",
     "description": "Workspace number indicators with running window icons",
     "category": "Compositor",
-    "allowMultiple": false
+    "allowMultiple": false,
+    "defaults": {
+      "fontSizeOffset": 0,
+      "iconSizeOffset": 0
+    },
+    "schema": [
+      {
+        "key": "fontSizeOffset",
+        "type": "integer",
+        "label": "Workspace number size offset",
+        "description": "Shifts the workspace number away from the bar's font size. 0 matches the rest of the bar; negative values shrink it.",
+        "min": -6,
+        "max": 6,
+        "step": 1,
+        "defaultValue": 0
+      },
+      {
+        "key": "iconSizeOffset",
+        "type": "integer",
+        "label": "Window icon size offset",
+        "description": "Shifts the window icons away from their default size, which follows the bar's font size. 0 keeps the default; negative values shrink them. Icons never grow past the bar's height.",
+        "min": -8,
+        "max": 12,
+        "step": 1,
+        "defaultValue": 0
+      }
+    ]
   }
 }
